@@ -498,4 +498,9 @@
     .project-lst li .list-wrap {
         padding: 0 2rem;
     }
+
+    .hero .tit-wrap h2 span {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
 }
