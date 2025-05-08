@@ -57,6 +57,7 @@ header.scroll {
 }
 
 .fixedTop {
+    position: relative;
     width: 180rem;
     display: flex;
     justify-content: space-between;
@@ -172,6 +173,15 @@ header.scroll {
 
 .hero .tit-wrap h2 {
     width: 100%;
+}
+
+.hero .tit-wrap h2 .seunghyun2 {
+    display: none;
+}
+
+.myImg {
+    position: relative;
+    z-index: 3;
 }
 
 

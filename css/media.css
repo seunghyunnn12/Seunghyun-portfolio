@@ -372,6 +372,14 @@
 }
 
 @media screen and (max-width:680px) {
+    .hero .tit-wrap h2 .seunghyun {
+        display: none;
+    }
+    .hero .tit-wrap h2 .seunghyun2 {
+        font-size: 11rem;
+        display: block;
+        line-height: 10rem;
+    }
     .rel {
         padding: 0 1.5rem;
     }
@@ -515,5 +523,9 @@
 
     .pf-con.skill-wrap .icon-wrap {
         justify-content: space-evenly;
+    }
+
+    .seunghyun {
+        width: 15rem;
     }
 }
