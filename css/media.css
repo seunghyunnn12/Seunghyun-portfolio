@@ -373,8 +373,9 @@
 
 @media screen and (max-width:680px) {
     .rel {
-        padding:  0 1.5rem;
+        padding: 0 1.5rem;
     }
+
     .contact-info {
         flex-direction: column;
         gap: 3rem;
@@ -467,6 +468,7 @@
     .project-lst li .content .in .t-wrap {
         text-align: center;
     }
+
     .s0 .left h1 {
         font-size: 10rem;
         left: calc(50% - 32rem);
@@ -476,13 +478,19 @@
     }
 
     .hero .hero-flower {
-        width: 120vw;
-        /* 좀 더 크게 보이게 하려면 120vw도 OK */
+        width: 100vw;
+        /* 뷰포트 너비에 맞게 제한 */
         top: -20%;
+        /* 위치는 적절히 조절 */
+        left: 50%;
+        transform: translateX(-50%);
     }
+
+
     .project-lst li .content .in .t-wrap p {
         display: none;
     }
+
     .project-lst li .content .in .t-wrap p.short {
         display: block;
         font-size: 2rem;
@@ -495,6 +503,7 @@
         gap: 1rem;
         justify-content: flex-start;
     }
+
     .project-lst li .list-wrap {
         padding: 0 2rem;
     }
@@ -502,5 +511,9 @@
     .hero .tit-wrap h2 span {
         font-size: 6rem;
         line-height: 6rem;
+    }
+
+    .pf-con.skill-wrap .icon-wrap {
+        justify-content: space-evenly;
     }
 }
