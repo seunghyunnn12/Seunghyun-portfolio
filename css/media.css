@@ -121,7 +121,9 @@
         max-width: none;
         width: 100%;
     }
-    .project-lst li.Click .content, .project-lst li.Click:hover .content {
+
+    .project-lst li.Click .content,
+    .project-lst li.Click:hover .content {
         margin-top: 0;
     }
 }
@@ -176,6 +178,7 @@
     .project-lst li .list-wrap {
         padding: 0 5rem;
     }
+
     .hero .tit-wrap h2 span {
         font-size: 11rem;
     }
@@ -270,6 +273,7 @@
     .profile-wrap {
         padding: 0;
     }
+
     .hero .hero-flower {
         top: -55rem;
     }
@@ -281,7 +285,7 @@
 
     .hero {
         height: 100vh;
-    
+
     }
 
     .hero .tit-wrap h2 span {
@@ -296,6 +300,15 @@
         font-size: 17rem;
         left: calc(50% - 63rem);
         top: -19%;
+    }
+
+    .hero .hero-flower {
+        width: 100vw;
+        /* 뷰포트 너비에 맞게 제한 */
+        top: -30%;
+        /* 위치는 적절히 조절 */
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .fixedMenu {
@@ -336,16 +349,20 @@
     .fixedTop {
         position: relative;
     }
+
     .hero {
         padding: 0;
     }
-    .quote{
+
+    .quote {
         display: none;
     }
-    .hero .tit-wrap{
+
+    .hero .tit-wrap {
         width: auto;
     }
-    .hero .tit-wrap h2{
+
+    .hero .tit-wrap h2 {
         max-width: 80%;
     }
 
@@ -355,14 +372,21 @@
 }
 
 @media screen and (max-width:680px) {
+    .rel {
+        padding:  0 1.5rem;
+    }
     .contact-info {
         flex-direction: column;
         gap: 3rem;
     }
 
-    .hero .tit-wrap h2 span {
-
+    .project-lst li.Click .link-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
     }
+
 
 
 
@@ -435,5 +459,43 @@
         background-image: url(../img/g2g-active.png);
         opacity: 1;
         background-size: cover;
-    } 
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .project-lst li .content .in .t-wrap {
+        text-align: center;
+    }
+    .s0 .left h1 {
+        font-size: 10rem;
+        left: calc(50% - 32rem);
+        top: -6rem;
+        line-height: 10rem;
+        width: 50rem;
+    }
+
+    .hero .hero-flower {
+        width: 120vw;
+        /* 좀 더 크게 보이게 하려면 120vw도 OK */
+        top: -20%;
+    }
+    .project-lst li .content .in .t-wrap p {
+        display: none;
+    }
+    .project-lst li .content .in .t-wrap p.short {
+        display: block;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .project-lst li.Click .link-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+    .project-lst li .list-wrap {
+        padding: 0 2rem;
+    }
 }

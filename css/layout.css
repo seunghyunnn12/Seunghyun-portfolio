@@ -516,6 +516,9 @@ header.scroll {
 
 
 /* Project List */
+p.short {
+    display: none;
+}
 .project-lst li {
     position: relative;
     /* top: 0; */
