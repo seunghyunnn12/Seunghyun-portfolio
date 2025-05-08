@@ -1,0 +1,439 @@
+@media screen and (max-width:1900px) {
+    .hero .hero-flower {
+        width: 120rem;
+        top: -60%;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    .rel {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .s0 .left h1 {
+        font-size: 20rem;
+        left: -70%;
+    }
+
+    .s0 .left p {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+
+    .edu-wrap {
+        display: block;
+        width: 100%;
+    }
+
+    /* .pg-wrap {
+        display: none;    
+    } */
+
+    .edu-wrap .pf-con {
+        width: 100%;
+        min-height: 10rem;
+    }
+
+    .practice-wrap .practice-ul-wrap {
+        flex-wrap: wrap;
+    }
+
+    .profile-wrap {
+        gap: 5rem;
+    }
+
+    .edu-wrap .pf-con.pf1 {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width:1433px) {
+    .hero .hero-flower {
+        width: 100rem;
+        top: -50%;
+    }
+
+    .quote {
+        margin: 0 0 3rem;
+        left: calc(65% - 37.5rem);
+    }
+
+    .quote .eng h3 {
+        font-size: 2rem;
+    }
+
+    .quote .kr span {
+        display: none;
+    }
+
+
+    .rel {
+        padding: 0 3rem;
+    }
+
+    .s0 .rel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 10rem;
+    }
+
+    .s0 .left {
+        padding: 0rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s0 .left h1 {
+        font-size: 18rem;
+        left: calc(50% - 65rem);
+        top: 10%;
+    }
+
+    .profile-wrap {
+        margin-left: 0;
+        padding: 0 5rem;
+    }
+
+    .pf-con h3 {
+        transform: translateX(1rem);
+    }
+
+    .project {
+        font-size: 4rem;
+    }
+
+    .project-lst li .content .in {
+        flex-direction: column;
+    }
+
+    .project-lst li .content .in .img-wrap {
+        max-width: 70rem;
+    }
+
+    .project-lst li .content .in .t-wrap {
+        max-width: none;
+        width: 100%;
+    }
+    .project-lst li.Click .content, .project-lst li.Click:hover .content {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .rel {
+        padding: 0 3rem;
+    }
+
+
+    .s0 .rel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 10rem;
+    }
+
+    .s0 .left {
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s0 .left h1 {
+        font-size: 18rem;
+        left: calc(50% - 65rem);
+        top: 10%;
+    }
+
+    .profile-wrap {
+        margin-left: 0;
+        padding: 0 3rem;
+    }
+
+    .pf-con h3 {
+        transform: translateX(1rem);
+    }
+
+    .project {
+        font-size: 4rem;
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .project-lst li .list-wrap {
+        padding: 0 5rem;
+    }
+    .hero .tit-wrap h2 span {
+        font-size: 11rem;
+    }
+
+    .quote .eng h3 {
+        display: none;
+    }
+
+    .project-lst.work li:nth-child(1)::before {
+        background: url(../img/tablet-yellow.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(1).Click::before,
+    .project-lst li:nth-child(1).Click:hover:before {
+        background-image: url(../img/yellow-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.work li:nth-child(2)::before {
+        background: url(../img/tablet-red.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(2).Click::before,
+    .project-lst li:nth-child(2).Click:hover:before {
+        background-image: url(../img/red-active-2.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+    .project-lst.work li:nth-child(3)::before {
+        background: url(../img/tablet-orange.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(3).Click::before,
+    .project-lst li:nth-child(3).Click:hover:before {
+        background-image: url(../img/orange2-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+    .project-lst.clone li:nth-child(1)::before {
+        background: url(../img/tablet-green.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(1).Click::before,
+    .project-lst.clone li:nth-child(1).Click:hover:before {
+        background-image: url(../img/green-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.clone li:nth-child(2)::before {
+        background: url(../img/tablet-blue.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(2).Click::before,
+    .project-lst.clone li:nth-child(2).Click:hover:before {
+        background-image: url(../img/desktop-blue-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.clone li:nth-child(3)::before {
+        background: url(../img/g2g-tablet.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(3).Click::before,
+    .project-lst.clone li:nth-child(3).Click:hover:before {
+        background-image: url(../img/g2g-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .tag {
+        display: none;
+    }
+}
+
+@media screen and (max-width:840px) {
+
+    #s1 .rel h2 {
+        font-size: 5rem;
+    }
+
+    .s0 .left {
+        padding: 0 1rem;
+    }
+
+    .profile-wrap {
+        padding: 0;
+    }
+    .hero .hero-flower {
+        top: -55rem;
+    }
+
+    .hero-txt-wrap {
+        align-items: flex-end;
+        padding-bottom: 15rem;
+    }
+
+    .hero {
+        height: 100vh;
+    
+    }
+
+    .hero .tit-wrap h2 span {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+/* 미디어 쿼리 - 모바일 화면용 */
+@media screen and (max-width: 768px) {
+    .s0 .left h1 {
+        font-size: 17rem;
+        left: calc(50% - 63rem);
+        top: -19%;
+    }
+
+    .fixedMenu {
+        margin-top: 1rem;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 8rem;
+        right: 2rem;
+        width: 20rem;
+        background-color: white;
+        border-radius: 1.2rem;
+        padding: 1rem 0;
+        gap: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    .fixedMenu.active {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+        height: auto;
+        z-index: 10;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .fixedTop {
+        position: relative;
+    }
+    .hero {
+        padding: 0;
+    }
+    .quote{
+        display: none;
+    }
+    .hero .tit-wrap{
+        width: auto;
+    }
+    .hero .tit-wrap h2{
+        max-width: 80%;
+    }
+
+    a.logo {
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .hero .tit-wrap h2 span {
+
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    .project-lst.work li:nth-child(1)::before {
+        background: url(../img/600-yellow.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(1).Click::before,
+    .project-lst li:nth-child(1).Click:hover:before {
+        background-image: url(../img/yellow-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.work li:nth-child(2)::before {
+        background: url(../img/600-levis.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(2).Click::before,
+    .project-lst li:nth-child(2).Click:hover:before {
+        background-image: url(../img/red-active-2.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+    .project-lst.work li:nth-child(3)::before {
+        background: url(../img/600-orange.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(3).Click::before,
+    .project-lst li:nth-child(3).Click:hover:before {
+        background-image: url(../img/orange2-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+    .project-lst.clone li:nth-child(1)::before {
+        background: url(../img/600-naver.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(1).Click::before,
+    .project-lst.clone li:nth-child(1).Click:hover:before {
+        background-image: url(../img/green-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.clone li:nth-child(2)::before {
+        background: url(../img/600-blue.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(2).Click::before,
+    .project-lst.clone li:nth-child(2).Click:hover:before {
+        background-image: url(../img/desktop-blue-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+    .project-lst.clone li:nth-child(3)::before {
+        background: url(../img/600-g2g.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(3).Click::before,
+    .project-lst.clone li:nth-child(3).Click:hover:before {
+        background-image: url(../img/g2g-active.png);
+        opacity: 1;
+        background-size: cover;
+    } 
+}

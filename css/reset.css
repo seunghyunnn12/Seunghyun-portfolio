@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+ul,
+dl,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.rel {
+    max-width: 160rem;
+    margin: auto;
+    height: 100%;
+}
+
+#s1 .rel {
+    height: auto;
+}
+
+
+
+span, p {
+    color: white;
+}
+
+
+section {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+}
+
+.right .profile-wrap {
+    color: white;
+}
+
+#s1 .rel h2 {
+    font-size: 7rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+.tit-wrap.mid{
+    color: white;
+    padding: 20rem 0 10rem;
+    text-align: center;
+
+}
+.tit-wrap.mid h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 100;
+    color: white;
+
+}
+.tit-wrap.mid h3::after,
+.tit-wrap.mid h3::before{
+    color: white;
+    display: block;
+    content: "";
+    width: .2rem;
+    height: 5rem;
+    background-color: #3b3b3b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.tit-wrap.mid h3::before{
+    top:-5rem
+}
+.tit-wrap.mid h3::after{
+    bottom:-5rem
+}
