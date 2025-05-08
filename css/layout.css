@@ -57,6 +57,7 @@ header.scroll {
 }
 
 .fixedTop {
+    z-index: 10;
     width: 180rem;
     display: flex;
     justify-content: space-between;
