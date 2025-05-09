@@ -323,6 +323,13 @@ let gameOver = false;
 const dinoImg = new Image();
 dinoImg.src = "./img/dino.png";
 
+const cactusImg = new Image();
+cactusImg.src = "./img/tree.png";  // 실제 경로에 맞게 수정
+
+const birdImg = new Image();
+birdImg.src = "./img/bird.png";
+
+
 function drawDino() {
     if (dinoImg.complete) {
         ctx.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height);
@@ -334,17 +341,26 @@ function drawDino() {
 
 function drawCactus() {
     if (cactus) {
-        ctx.fillStyle = "white";
-        ctx.fillRect(cactus.x, canvas.height - cactus.height, cactus.width, cactus.height);
+        if (cactusImg.complete) {
+            ctx.drawImage(cactusImg, cactus.x, canvas.height - cactus.height, cactus.width, cactus.height);
+        } else {
+            ctx.fillStyle = "white";
+            ctx.fillRect(cactus.x, canvas.height - cactus.height, cactus.width, cactus.height);
+        }
     }
 }
 
 function drawBird() {
     if (bird) {
-        ctx.fillStyle = "white";
-        ctx.fillRect(bird.x, bird.y, bird.width, bird.height);
+        if (birdImg.complete) {
+            ctx.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+        } else {
+            ctx.fillStyle = "white";
+            ctx.fillRect(bird.x, bird.y, bird.width, bird.height);
+        }
     }
 }
+
 
 function drawScore() {
     ctx.fillStyle = "#ccc";
@@ -383,7 +399,7 @@ function updateGame() {
     }
 
     // 점수 5 이상이면 색 반전
-    if (score >= 5) {
+    if (score >= 3) {
         canvas.style.filter = "invert(1)";
     } else {
         canvas.style.filter = "invert(0)";

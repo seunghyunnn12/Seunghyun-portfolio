@@ -5,13 +5,11 @@
     }
 }
 
+
 @media screen and (max-width:1650px) {
     .rel {
         padding: 0 3rem;
     }
-}
-
-@media screen and (max-width:1550px) {
     .s0 .left h1 {
         font-size: 20rem;
         left: -70%;
@@ -51,6 +49,15 @@
 }
 
 @media screen and (max-width:1433px) {
+    .s0 {
+        background-image: url(../img/s0.png);
+        background-position: top;
+        background-size: cover;
+    }
+
+    .s0 .left h1 {
+        margin-top: 10rem;
+    }
     .hero .hero-flower {
         width: 100rem;
         top: -50%;
@@ -494,6 +501,10 @@
         transform: translateX(-50%);
     }
 
+    .project-lst li .content .in .t-wrap h3 {
+        display: none;
+    }
+
 
     .project-lst li .content .in .t-wrap p {
         display: none;
@@ -509,7 +520,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        justify-content: flex-start;
+        justify-content: space-evenly;
     }
 
     .project-lst li .list-wrap {
