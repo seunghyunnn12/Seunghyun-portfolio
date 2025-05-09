@@ -10,6 +10,7 @@
     .rel {
         padding: 0 3rem;
     }
+
     .s0 .left h1 {
         font-size: 20rem;
         left: -70%;
@@ -58,6 +59,7 @@
     .s0 .left h1 {
         margin-top: 10rem;
     }
+
     .hero .hero-flower {
         width: 100rem;
         top: -50%;
@@ -382,11 +384,13 @@
     .hero .tit-wrap h2 .seunghyun {
         display: none;
     }
+
     .hero .tit-wrap h2 .seunghyun2 {
         font-size: 9rem;
         display: block;
         line-height: 10rem;
     }
+
     .rel {
         padding: 0 1.5rem;
     }
@@ -480,6 +484,13 @@
 
 
 @media screen and (max-width:450px) {
+
+    .s0 {
+        background-image: url(../img/s0-mobile.png);
+        background-position: top;
+        background-size: cover;
+    }
+
     .project-lst li .content .in .t-wrap {
         text-align: center;
     }
