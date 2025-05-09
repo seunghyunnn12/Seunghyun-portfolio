@@ -480,6 +480,9 @@
 
 
 @media screen and (max-width:450px) {
+    .hero .tit-wrap h2 {
+        margin-top: 5rem;
+    }
     .project-lst li .content .in .t-wrap {
         text-align: center;
     }
