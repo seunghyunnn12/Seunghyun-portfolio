@@ -485,6 +485,10 @@
 
 @media screen and (max-width:450px) {
 
+    .hero-txt-wrap {
+        padding-top: 35rem;
+    }
+
     .s0 {
         background-image: url(../img/s0-mobile.png);
         background-position: top;
@@ -506,7 +510,7 @@
     .hero .hero-flower {
         width: 100vw;
         /* 뷰포트 너비에 맞게 제한 */
-        top: -20%;
+        top: -23%;
         /* 위치는 적절히 조절 */
         left: 50%;
         transform: translateX(-50%);

@@ -286,6 +286,19 @@ const startBtn = document.getElementById("startBtn");
 const pauseBtn = document.getElementById("pauseBtn");
 const restartBtn = document.getElementById("restartBtn");
 
+
+canvas.addEventListener("touchstart", () => {
+    if (gameOver) {
+        resetGame();
+        startGame();
+    } else if (!running) {
+        startGame();
+    } else if (!dino.jumping) {
+        dino.jumping = true;
+        dino.vy = -15;
+    }
+});
+
 let dino = {
     x: 50,
     y: 178,
