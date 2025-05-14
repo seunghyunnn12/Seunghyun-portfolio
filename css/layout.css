@@ -589,6 +589,9 @@ p.short {
 .project-lst li:nth-child(3)::before {
     background: url(../img/desktop-works-li-orange.png) no-repeat center /100% 100%;
 }
+.project-lst li:nth-child(4)::before {
+    background: url(../img/BrewBoard-li.png) no-repeat center /100% 100%;
+}
 
 .project-lst.clone li:nth-child(1)::before {
     background: url(../img/green.png) no-repeat center /100% 100%;
@@ -599,6 +602,9 @@ p.short {
 }
 .project-lst.clone li:nth-child(3)::before {
     background: url(../img/g2g-dektop.png) no-repeat center /100% 100%;
+}
+.project-lst.clone li:nth-child(4)::before {
+    background: url(../img/samdasoo-li.png) no-repeat center /100% 100%;
 }
 
 /* Project List Active State */
@@ -755,6 +761,12 @@ img {
     opacity: 1;
     background-size: cover;
 }
+.project-lst li:nth-child(4).Click::before,
+.project-lst li:nth-child(4).Click:hover:before {
+    background-image: url(../img/BrewBoard-active.png);
+    opacity: 1;
+    background-size: cover;
+}
 
 .project-lst.clone li:nth-child(1).Click::before,
 .project-lst.clone li:nth-child(1).Click:hover:before {
@@ -770,6 +782,11 @@ img {
 .project-lst.clone li:nth-child(3).Click::before,
 .project-lst.clone li:nth-child(3).Click:hover:before {
     background-image: url(../img/g2g-active.png);
+    opacity: 1;
+}
+.project-lst.clone li:nth-child(4).Click::before,
+.project-lst.clone li:nth-child(4).Click:hover:before {
+    background-image: url(../img/samdasoo-active.png);
     opacity: 1;
 }
 
@@ -1172,6 +1189,7 @@ img {
     right: 8px;
     display: flex;
     gap: 0.5rem;
+    z-index: 4;
 }
 
 .game-controls-overlay button {

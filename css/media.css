@@ -313,9 +313,7 @@
 
     .hero .hero-flower {
         width: 100vw;
-        /* 뷰포트 너비에 맞게 제한 */
         top: -30%;
-        /* 위치는 적절히 조절 */
         left: 50%;
         transform: translateX(-50%);
     }
@@ -377,6 +375,9 @@
 
     a.logo {
         width: 7rem;
+    }
+    .arr {
+        display: none;
     }
 }
 
@@ -446,6 +447,16 @@
         opacity: 1;
         background-size: cover;
     }
+    .project-lst.work li:nth-child(4)::before {
+        background: url(../img/600-BrewBoard.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst li:nth-child(4).Click::before,
+    .project-lst li:nth-child(4).Click:hover:before {
+        background-image: url(../img/BrewBoard-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
 
 
     .project-lst.clone li:nth-child(1)::before {
@@ -477,6 +488,16 @@
     .project-lst.clone li:nth-child(3).Click::before,
     .project-lst.clone li:nth-child(3).Click:hover:before {
         background-image: url(../img/g2g-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    .project-lst.clone li:nth-child(4)::before {
+        background: url(../img/600-samdasoo.png) no-repeat center /100% 100%;
+    }
+
+    .project-lst.clone li:nth-child(4).Click::before,
+    .project-lst.clone li:nth-child(4).Click:hover:before {
+        background-image: url(../img/samdasoo-active.png);
         opacity: 1;
         background-size: cover;
     }
