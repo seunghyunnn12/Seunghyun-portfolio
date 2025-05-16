@@ -289,7 +289,7 @@
 
     .hero-txt-wrap {
         align-items: flex-end;
-        padding-bottom: 15rem;
+        padding-bottom: 10rem;
     }
 
     .hero {
@@ -313,7 +313,7 @@
 
     .hero .hero-flower {
         width: 100vw;
-        top: -30%;
+        top: calc(50% - 60rem);
         left: 50%;
         transform: translateX(-50%);
     }
