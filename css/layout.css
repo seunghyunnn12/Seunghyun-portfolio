@@ -4,6 +4,184 @@ body {
     overflow-x: hidden;
 }
 
+
+/* white mode */
+
+
+body.inverted .hero,
+body.inverted .s0,
+body.inverted .horizontal,
+body.inverted .practice-ul-wrap,
+body.inverted #s2,
+body.inverted .project-lst {
+    filter: invert(1);
+    transition: filter 0.4s ease;
+}
+
+body.inverted #s1 {
+    background-color: white;
+}
+
+body.inverted .tit-wrap.mid h3,
+body.inverted #s1 .rel h2 {
+    color: black;
+}
+
+body.inverted .myImg,
+body.inverted .hero-flower,
+body.inverted .project-lst .img-wrap,
+body.inverted .footer-icon {
+    filter: invert(1);
+    transition: filter 0.4s ease;
+}
+
+body.inverted .fixedTop .logo img {
+    filter: invert(0);
+}
+
+body.inverted .project-lst li::before {
+    filter: invert(1);
+}
+
+body.inverted .project-lst.work li:nth-child(1)::before {
+    background: url(../img/yellow-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst.work li.Click::before,
+body.inverted .project-lst.work li.Click:hover:before {
+    background-image: url(../img/yellow-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+body.inverted .project-lst.work li:nth-child(2)::before {
+    background: url(../img/levis-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst li:nth-child(2).Click::before,
+body.inverted .project-lst li:nth-child(2).Click:hover:before {
+    background-image: url(../img/levis-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+body.inverted .project-lst.work li:nth-child(3)::before {
+    background: url(../img/fiesta-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst li:nth-child(3).Click::before,
+body.inverted .project-lst li:nth-child(3).Click:hover:before {
+    background-image: url(../img/fiesta-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+body.inverted .project-lst.work li:nth-child(4)::before {
+    background: url(../img/brewboard-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst li:nth-child(4).Click::before,
+body.inverted .project-lst li:nth-child(4).Click:hover:before {
+    background-image: url(../img/brewboard-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+
+
+
+body.inverted .project-lst.clone li:nth-child(1)::before {
+    background: url(../img/naver-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst.clone li:nth-child(1).Click::before,
+body.inverted .project-lst.clone  li:nth-child(1).Click:hover:before {
+    background-image: url(../img/naver-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+
+body.inverted .project-lst.clone li:nth-child(2)::before {
+    background: url(../img/mangwoo-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst.clone li:nth-child(2).Click::before,
+body.inverted .project-lst.clone li:nth-child(2).Click:hover:before {
+    background-image: url(../img/mangwoo-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+body.inverted .project-lst.clone li:nth-child(3)::before {
+    background: url(../img/g2g-li-white.png) no-repeat center /100% 100%;
+}
+
+body.inverted .project-lst.clone li:nth-child(3).Click::before,
+body.inverted .project-lst.clone li:nth-child(3).Click:hover:before {
+    background-image: url(../img/g2g-li-active-white.png);
+    opacity: 1;
+    background-size: cover;
+}
+
+.fixed-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.invert-btn {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG 아이콘 공통 스타일 */
+.invert-btn svg {
+    width: 3rem;
+    height: 3rem;
+    transition: fill 0.3s ease;
+}
+
+/* 기본 색상 */
+.invert-btn .sun svg {
+    fill: #222222;
+}
+
+.invert-btn .moon svg {
+    fill: #222222;
+}
+
+/* 호버 시 색상 변경 */
+.invert-btn:hover .sun svg {
+    fill: #facc15;
+    /* tailwind 기준 노랑: yellow-400 */
+}
+
+.invert-btn:hover .moon svg {
+    fill: #facc15;
+}
+
+/* 기본: 해 보임, 달 숨김 */
+.invert-btn .moon {
+    display: none;
+}
+
+.invert-btn .sun {
+    display: block;
+}
+
+/* 다크모드일 때: 해 숨기고 달 보이게 */
+body.inverted .invert-btn .moon {
+    display: block;
+}
+
+body.inverted .invert-btn .sun {
+    display: none;
+}
+
+
+
+
+
 /* 작은 커서 */
 .cursor {
     position: fixed;
@@ -62,7 +240,7 @@ header.scroll {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4rem;
     z-index: 10;
     /* 간격 추가 */
 }
@@ -117,6 +295,8 @@ header.scroll {
     padding: 0.5rem 1rem;
 }
 
+
+
 .menu-toggle span {
     color: black;
 }
@@ -166,7 +346,7 @@ header.scroll {
     width: 100%;
 
     /* padding: 20vw 0 0 5vw; */
-     /* 뷰포트 기준으로 여백 설정 */
+    /* 뷰포트 기준으로 여백 설정 */
 
 }
 
@@ -530,6 +710,7 @@ header.scroll {
 p.short {
     display: none;
 }
+
 .project-lst li {
     position: relative;
     /* top: 0; */
@@ -589,6 +770,7 @@ p.short {
 .project-lst li:nth-child(3)::before {
     background: url(../img/desktop-works-li-orange.png) no-repeat center /100% 100%;
 }
+
 .project-lst li:nth-child(4)::before {
     background: url(../img/samdasoo-li.png) no-repeat center /100% 100%;
 }
@@ -600,9 +782,11 @@ p.short {
 .project-lst.clone li:nth-child(2)::before {
     background: url(../img/desktop-blue.png) no-repeat center /100% 100%;
 }
+
 .project-lst.clone li:nth-child(3)::before {
     background: url(../img/g2g-dektop.png) no-repeat center /100% 100%;
 }
+
 .project-lst.clone li:nth-child(4)::before {
     background: url(../img/BrewBoard-li.png) no-repeat center /100% 100%;
 }
@@ -761,6 +945,7 @@ img {
     opacity: 1;
     background-size: cover;
 }
+
 .project-lst li:nth-child(4).Click::before,
 .project-lst li:nth-child(4).Click:hover:before {
     background-image: url(../img/samdasoo-li.png);
@@ -779,11 +964,13 @@ img {
     background-image: url(../img/desktop-blue-active.png);
     opacity: 1;
 }
+
 .project-lst.clone li:nth-child(3).Click::before,
 .project-lst.clone li:nth-child(3).Click:hover:before {
     background-image: url(../img/g2g-active.png);
     opacity: 1;
 }
+
 .project-lst.clone li:nth-child(4).Click::before,
 .project-lst.clone li:nth-child(4).Click:hover:before {
     background-image: url(../img/BrewBoard-active.png);

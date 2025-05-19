@@ -275,6 +275,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// 화이트 모드
+const body = document.querySelector('body')
+const inverBtn = document.querySelector('.invert-btn')
+
+
+inverBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    body.classList.toggle('inverted')
+})
+
 
 
 // 공룡게임

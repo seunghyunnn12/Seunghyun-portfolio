@@ -102,7 +102,7 @@
     .s0 .left h1 {
         font-size: 18rem;
         left: calc(50% - 65rem);
-        top: 10%;
+        top: calc(50% - 45rem);
     }
 
     .profile-wrap {
@@ -376,6 +376,7 @@
     a.logo {
         width: 7rem;
     }
+
     .arr {
         display: none;
     }
@@ -447,6 +448,7 @@
         opacity: 1;
         background-size: cover;
     }
+
     .project-lst.work li:nth-child(4)::before {
         background: url(../img/600-BrewBoard.png) no-repeat center /100% 100%;
     }
@@ -491,6 +493,7 @@
         opacity: 1;
         background-size: cover;
     }
+
     .project-lst.clone li:nth-child(4)::before {
         background: url(../img/600-samdasoo.png) no-repeat center /100% 100%;
     }
@@ -498,6 +501,81 @@
     .project-lst.clone li:nth-child(4).Click::before,
     .project-lst.clone li:nth-child(4).Click:hover:before {
         background-image: url(../img/samdasoo-active.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+
+    body.inverted .project-lst.work li:nth-child(1)::before {
+        background: url(../img/600-yellow-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(1).Click::before,
+    body.inverted .project-lst li:nth-child(1).Click:hover:before {
+        background-image: url(../img/yellow-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    body.inverted .project-lst.work li:nth-child(2)::before {
+        background: url(../img/600-levis-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(2).Click::before,
+    body.inverted .project-lst li:nth-child(2).Click:hover:before {
+        background-image: url(../img/levis-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    body.inverted .project-lst.work li:nth-child(3)::before {
+        background: url(../img/600-orange-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(3).Click::before,
+    body.inverted .project-lst li:nth-child(3).Click:hover:before {
+        background-image: url(../img/fiesta-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    body.inverted .project-lst.work li:nth-child(4)::before {
+        background: url(../img/600-BrewBoard-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(4).Click::before,
+    body.inverted .project-lst li:nth-child(4).Click:hover:before {
+        background-image: url(../img/brewboard-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+
+
+    body.inverted .project-lst.clone li:nth-child(1)::before {
+        background: url(../img/600-naver-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(1).Click::before,
+    body.inverted .project-lst li:nth-child(1).Click:hover:before {
+        background-image: url(../img/naver-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    body.inverted .project-lst.clone li:nth-child(2)::before {
+        background: url(../img/600-mangwoo-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst li:nth-child(2).Click::before,
+    body.inverted .project-lst li:nth-child(2).Click:hover:before {
+        background-image: url(../img/mangwoo-li-active-white.png);
+        opacity: 1;
+        background-size: cover;
+    }
+    body.inverted .project-lst.clone li:nth-child(3)::before {
+        background: url(../img/600-g2g-white.png) no-repeat center /100% 100%;
+    }
+
+    body.inverted .project-lst.clone li:nth-child(3).Click::before,
+    body.inverted .project-lst.clone li:nth-child(3).Click:hover:before {
+        background-image: url(../img/g2g-li-active-white.png);
         opacity: 1;
         background-size: cover;
     }
