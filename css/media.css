@@ -319,7 +319,6 @@
     }
 
     .fixedMenu {
-        margin-top: 1rem;
         display: none;
         flex-direction: column;
         position: absolute;

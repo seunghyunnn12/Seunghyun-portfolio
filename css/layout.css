@@ -292,7 +292,7 @@ header.scroll {
     background-color: white;
     color: black;
     border-radius: 1.2rem;
-    padding: 1rem;
+    padding: 0.3rem 1rem;
 }
 
 
@@ -948,7 +948,7 @@ img {
 
 .project-lst li:nth-child(4).Click::before,
 .project-lst li:nth-child(4).Click:hover:before {
-    background-image: url(../img/samdasoo-li.png);
+    background-image: url(../img/samdasoo-active.png);
     opacity: 1;
     background-size: cover;
 }
