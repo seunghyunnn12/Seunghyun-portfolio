@@ -53,6 +53,7 @@ body.inverted .project-lst.work li.Click:hover:before {
     opacity: 1;
     background-size: cover;
 }
+
 body.inverted .project-lst.work li:nth-child(2)::before {
     background: url(../img/levis-li-white.png) no-repeat center /100% 100%;
 }
@@ -63,6 +64,7 @@ body.inverted .project-lst li:nth-child(2).Click:hover:before {
     opacity: 1;
     background-size: cover;
 }
+
 body.inverted .project-lst.work li:nth-child(3)::before {
     background: url(../img/fiesta-li-white.png) no-repeat center /100% 100%;
 }
@@ -73,6 +75,7 @@ body.inverted .project-lst li:nth-child(3).Click:hover:before {
     opacity: 1;
     background-size: cover;
 }
+
 body.inverted .project-lst.work li:nth-child(4)::before {
     background: url(../img/brewboard-li-white.png) no-repeat center /100% 100%;
 }
@@ -91,7 +94,7 @@ body.inverted .project-lst.clone li:nth-child(1)::before {
 }
 
 body.inverted .project-lst.clone li:nth-child(1).Click::before,
-body.inverted .project-lst.clone  li:nth-child(1).Click:hover:before {
+body.inverted .project-lst.clone li:nth-child(1).Click:hover:before {
     background-image: url(../img/naver-li-active-white.png);
     opacity: 1;
     background-size: cover;
@@ -107,6 +110,7 @@ body.inverted .project-lst.clone li:nth-child(2).Click:hover:before {
     opacity: 1;
     background-size: cover;
 }
+
 body.inverted .project-lst.clone li:nth-child(3)::before {
     background: url(../img/g2g-li-white.png) no-repeat center /100% 100%;
 }
@@ -622,7 +626,6 @@ header.scroll {
 
 
 
-/* 중간 애니메이션 배너 */
 .horizontal {
     overflow: hidden;
     white-space: nowrap;
@@ -631,14 +634,21 @@ header.scroll {
     background-color: black;
     border-top: .8rem solid white;
     border-bottom: .8rem solid white;
+    position: relative;
 }
 
 .horizontal-banner {
-    display: inline-flex;
-    animation: horizontal 20s linear infinite;
-    justify-content: space-between;
+    display: flex;
+    animation: horizontal-scroll 10s linear infinite;
     align-items: center;
     height: 100%;
+}
+
+.horizontal-banner::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 /* hover 시 애니메이션 일시정지 */
@@ -651,16 +661,15 @@ header.scroll {
     margin: 0 7rem;
 }
 
-@keyframes horizontal {
+@keyframes horizontal-scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
     100% {
         transform: translateX(-50%);
     }
 }
-
 
 /* 중간 my works 배너 */
 
@@ -1323,6 +1332,10 @@ img {
 
 .contact-item img {
     width: 20px;
+}
+
+.contact-item a {
+    color: white;
 }
 
 .mini-game {
